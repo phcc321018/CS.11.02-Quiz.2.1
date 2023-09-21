@@ -1,11 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-        int numOne = 5;
-        int numTwo = 10;
-        int numThree = 15;
-        int numFour = 20;
-        int resultThree = add(numOne, numTwo, numThree, numFour);
-        System.out.println(resultThree);
+        int resultOne = add(5, 10); 
+        System.out.println(resultOne); 
+        
+        String resultTwo = greeting("Patrick"); 
+        System.out.println(resultTwo); 
+        
+        int resultThree = add(2, 4, 6, 8); 
+        System.out.println(resultThree); 
+        
+        printMe("Hello, world!"); 
+    }
+
+    public static int add(int numOne, int numTwo) {
+        return numOne + numTwo;
+    }
+
+    public static String greeting(String name) {
+        return "Bonjour, " + name + "!";
     }
 
     public static int add(int numOne, int numTwo, int numThree, int numFour) {
@@ -15,7 +27,7 @@ public class Main {
         return sumThree;
     }
 
-    public static int add(int numOne, int numTwo) {
-        return numOne + numTwo;
+    public static void printMe(String toBePrinted) {
+        System.out.println(toBePrinted);
     }
 }
